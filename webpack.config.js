@@ -1,0 +1,74 @@
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+module.exports = (env, argv) => {
+  const isProduction = argv.mode === 'production';
+
+  return {
+    entry: './src/index.js', // Входная точка вашего приложения
+    output: {
+      path: path.resolve(__dirname, 'dist'),
+      filename: isProduction ? 'bundle.[contenthash].js' : 'bundle.js',
+      publicPath: '/',
+    },
+    mode: isProduction ? 'production' : 'development',
+    devtool: isProduction ? 'source-map' : 'inline-source-map',
+    devServer: {
+      static: path.resolve(__dirname, 'dist'),
+      historyApiFallback: true,
+      port: 3000,
+      open: true,
+      hot: true,
+    },
+    module: {
+      rules: [
+        {
+          test: /\.(js|jsx)$/, // Обработка JS и JSX файлов
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: [
+                '@babel/preset-env', // Транспиляция ES6+
+                '@babel/preset-react', // Транспиляция React JSX
+              ],
+            },
+          },
+        },
+        {
+          test: /\.css$/, // Обработка CSS файлов
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.(png|jpe?g|gif|svg)$/, // Обработка изображений
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[hash].[ext]',
+                outputPath: 'images',
+              },
+            },
+          ],
+        },
+        // Добавьте другие правила загрузчиков по мере необходимости
+      ],
+    },
+    resolve: {
+      extensions: ['.js', '.jsx'], // Расширения файлов для разрешения
+    },
+    plugins: [
+      new CleanWebpackPlugin(), // Очистка папки dist перед сборкой
+      new HtmlWebpackPlugin({
+        template: './public/index.html', // Шаблон HTML
+        favicon: './public/favicon.ico', // (Необязательно) Фавикон
+      }),
+    ],
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+      },
+    },
+  };
+};
