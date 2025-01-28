@@ -6,7 +6,7 @@ module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
 
   return {
-    entry: './src/index.js', // Входная точка вашего приложения
+    entry: './src/js/index.js', // Входная точка вашего приложения
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: isProduction ? 'bundle.[contenthash].js' : 'bundle.js',
@@ -47,7 +47,7 @@ module.exports = (env, argv) => {
               loader: 'file-loader',
               options: {
                 name: '[name].[hash].[ext]',
-                outputPath: 'images',
+                outputPath: 'img',
               },
             },
           ],
