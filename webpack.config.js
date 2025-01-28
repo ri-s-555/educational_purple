@@ -62,13 +62,9 @@ module.exports = (env, argv) => {
       new CleanWebpackPlugin(), // Очистка папки dist перед сборкой
       new HtmlWebpackPlugin({
         template: './public/index.html', // Шаблон HTML
-        favicon: './public/favicon.ico', // (Необязательно) Фавикон
+        
       }),
     ],
-    optimization: {
-      splitChunks: {
-        chunks: 'all',
-      },
-    },
+
   };
 };
