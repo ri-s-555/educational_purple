@@ -232,9 +232,11 @@
   height: 60px;
   border: 2px solid hsl(0, 0%, 100%);
   border-radius: 50%;
+  /* background-image: url('/img/Reviews_1.png'); */
 }
 
 .latest-product__descr_reviews__img-img:nth-child(2) {
+  
   left: 30px;
   z-index: 2;
 }

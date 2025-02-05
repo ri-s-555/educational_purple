@@ -1,12 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
 
   return {
-    entry: './src/index.js', // Входная точка вашего приложения
+    entry: './src/js/index.js', // Входная точка вашего приложения
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: isProduction ? 'bundle.[contenthash].js' : 'bundle.js',
@@ -40,18 +41,6 @@ module.exports = (env, argv) => {
           test: /\.css$/, // Обработка CSS файлов
           use: ['style-loader', 'css-loader'],
         },
-        {
-          test: /\.(png|jpe?g|gif|svg)$/, // Обработка изображений
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[name].[hash].[ext]',
-                outputPath: 'images',
-              },
-            },
-          ],
-        },
         // Добавьте другие правила загрузчиков по мере необходимости
       ],
     },
@@ -61,8 +50,13 @@ module.exports = (env, argv) => {
     plugins: [
       new CleanWebpackPlugin(), // Очистка папки dist перед сборкой
       new HtmlWebpackPlugin({
-        template: './public/index.html', // Шаблон HTML
+        template: './index.html', // Шаблон HTML
         
+      }),
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: 'public/img', to: 'img' } // Убедитесь, что путь соответствует вашей структуре
+        ]
       }),
     ],
 

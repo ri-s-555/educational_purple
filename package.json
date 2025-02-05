@@ -7,9 +7,6 @@
     "build": "webpack --mode production",
     "dev": "webpack --mode development"
   },
-  "dependencies": {
-    
-  },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
@@ -17,7 +14,9 @@
     "@babel/preset-typescript": "^7.0.0",
     "babel-loader": "^8.0.0",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.0.0",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.0.0",
     "style-loader": "^3.0.0",
     "webpack": "^5.0.0",
