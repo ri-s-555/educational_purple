@@ -702,3 +702,458 @@
 .sellers-product__next {
   padding-top: 180px;
 }
+
+
+/* страница 4
+*/
+.trending-earphones {
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.trending-earphones__header {
+  width: 465px;
+  height: 54px;
+
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 53.64px;
+  text-align: left;
+  color: rgba(43, 38, 38, 1);
+
+  margin-top: 70px;
+  margin-bottom: 55px;
+}
+
+.trending-earphones__menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  gap: 20px;
+
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.69px;
+}
+.trending-earphones__menu__e {
+  width: 177px;
+  height: 91px;
+  border-radius: 50%;
+  border: 0px;
+  background: rgba(16, 185, 129, 1);
+
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.69px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.trending-earphones__menu__w {
+  width: 177px;
+  height: 91px;
+  border-radius: 50%;
+  border: 0px;
+  background: rgba(16, 185, 129, 0);
+
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.69px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+.trending-earphones__product {
+  display: flex;
+  margin-top: 90px;
+}
+.trending-earphones__product__card {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 85px;
+}
+.trending-earphones__product__card__pick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 361px;
+  height: 438px;
+  border-radius: 25px;
+}
+.card-color_blu-3 {
+  background: rgba(224, 239, 255, 1);
+}
+.card-color_blu-4 {
+  background: rgba(232, 249, 255, 1);
+}
+.card-color_blu-5 {
+  background: rgba(211, 251, 251, 1);
+}
+.trending-earphones__product__card__pick__img {
+  position: relative;
+}
+.trending-earphones__product__card__pick__img__product {
+  width: 196px;
+  height: 196px;
+  margin-top: 30px;
+}
+.trending-earphones__product__card__pick__img__save {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+
+  width: 100px;
+  height: 100px;
+  padding-top: 25px;
+  border-radius: 50px;
+
+  position: absolute;
+  top: 15px;
+  right: -55px;
+}
+.trending-earphones__product__card__pick__descr {
+  display: flex;
+  flex-direction: column;
+
+  width: 319px;
+  height: 164px;
+
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 1);
+  padding: 31px 76px 30px 52px;
+}
+.trending-earphones__product__card__pick__descr__name {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+
+  color: rgba(43, 38, 38, 1);
+}
+.trending-earphones__product__card__pick__descr__reviews {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+.trending-earphones__product__card__pick__descr__reviews__svg {
+  display: flex;
+}
+.trending-earphones__product__card__pick__descr__reviews__text {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+
+  color: rgba(136, 136, 136, 1);
+}
+.trending-earphones__product__card__pick__descr__price {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25.6px;
+  text-align: left;
+
+  color: rgba(43, 38, 38, 1);
+}
+.trending-earphones__product__card__button {
+  width: 361px;
+  height: 70px;
+  border-radius: 10px;
+  background: rgba(16, 185, 129, 1);
+
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25.6px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+
+  margin-top: 29px;
+  border-color: rgba(0, 0, 0, 0);
+}
+.trending-earphones__product__next {
+  padding-top: 180px;
+}
+
+/* страница 5
+*/
+.new-launches {
+  background: rgba(132, 94, 194, 1);
+  display: flex;
+  justify-content: space-around;
+}
+.new-launches__back {
+  padding-top: 300px;
+  padding-left: 70px;
+}
+.new-launches__next {
+  padding-top: 300px;
+  padding-right: 70px;
+}
+.new-launches__sticker {
+  width: 521.36px;
+  height: 468px;
+  margin-top: 112px;
+  margin-bottom: 61px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.new-launches__sticker__img {
+  width: 237.79px;
+  height: 417px;
+  border-radius: 135px;
+  margin: 17px;
+}
+.new-launches__descr {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 73px;
+  margin-left: 85px;
+}
+.new-launches__descr__text__h {
+  width: 559.39px;
+  height: 54px;
+
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 73.64px;
+  text-align: left;
+
+  color: rgba(255, 255, 255, 1);
+}
+.new-launches__descr__text__p {
+  width: 570px;
+
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+
+  margin-top: 29px;
+  margin-bottom: 24px;
+}
+.new-launches__descr__price {
+  display: flex;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+.new-launches__descr__price__header {
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.new-launches__descr__price__value {
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 37.79px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.new-launches__descr__option-color__y {
+  margin-left: 31px;
+  margin-right: 35px;
+}
+.new-launches__descr__button__add {
+  width: 263.18px;
+  height: 70px;
+  border-radius: 10px;
+
+  background: rgba(16, 185, 129, 1);
+  box-shadow: 0px 25px 50px 0px rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 0, 0, 0);
+
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25.6px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+
+  margin-top: 50px;
+}
+
+.new-launches__descr__button__more {
+  width: 263.18px;
+  height: 70px;
+  border-radius: 10px;
+
+  background: transparent;
+  box-shadow: 0px 3px 7px 0px rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 0, 0, 0);
+
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25.6px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+
+  margin-top: 50px;
+}
+
+/* страница 6
+*/
+
+.futter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.futter__start {
+  width: 1068px;
+  height: 91px;
+  margin-left: 186px;
+  margin-top: 130px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.futter__start__text {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28.64px;
+  letter-spacing: -0.30000001192092896px;
+  text-align: left;
+  color: rgba(17, 17, 17, 1);
+
+  margin-right: 40px;
+}
+.futter__start__button {
+  width: 175px;
+  height: 50px;
+  background: rgba(16, 185, 129, 1);
+  border: rgba(0, 0, 0, 0);
+
+  font-family: "DM Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22.13px;
+  letter-spacing: -0.23181818425655365px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.futter__nav {
+  width: 1068px;
+  margin-left: 186px;
+  display: flex;
+  gap: 100px;
+}
+.futter__nav__subscribe {
+  width: 289px;
+  height: 139px;
+}
+.futter__nav__subscribe__text {
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28.64px;
+  letter-spacing: -0.30000001192092896px;
+  text-align: left;
+  color: rgba(17, 17, 17, 1);
+
+  margin-top: 40px;
+}
+.futter__nav__subscribe__imput {
+  display: flex;
+  margin-top: 30px;
+  width: 289px;
+  height: 50px;
+}
+.futter__nav__subscribe__imput__email {
+  width: 239px;
+  height: 50px;
+
+  border: 0px;
+  border-bottom: 1px solid #0000003b;
+
+  font-family: "DM Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.53px;
+  letter-spacing: -0.20454545319080353px;
+  text-align: left;
+  color: rgba(17, 17, 17, 1);
+}
+.futter__nav__subscribe__imput__button {
+  width: 50px;
+  height: 50px;
+  border: 0px;
+}
+.futter__nav__sevices ul {
+  list-style-type: none;
+  margin-top: 40px;
+  margin-right: 72px;
+}
+.futter__nav__about ul {
+  list-style-type: none;
+  margin-top: 40px;
+  margin-right: 71px;
+}
+.futter__nav__help ul {
+  list-style-type: none;
+  margin-top: 40px;
+}
+.green-nav {
+  font-family: "DM Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22.13px;
+  letter-spacing: -0.23181818425655365px;
+  text-align: left;
+  color: rgba(16, 185, 129, 1);
+
+  margin-bottom: 20px;
+}
+.gray-nav {
+  font-family: "DM Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.53px;
+  letter-spacing: -0.20454545319080353px;
+  text-align: left;
+  color: rgba(17, 17, 17, 1);
+
+  margin-bottom: 20px;
+}
+.futter__info {
+  width: 1068px;
+  margin-top: 70px;
+  margin-left: 186px;
+  display: flex;
+
+  font-family: "DM Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.53px;
+  letter-spacing: -0.20454545319080353px;
+  text-align: left;
+}
+.futter__info__terms {
+  margin-right: 39px;
+}
+.futter__info__policy {
+  margin-right: 653px;
+}
+.futter__info__contacts {
+  width: 133.96px;
+  display: flex;
+  justify-content: space-between;
+}
