@@ -537,36 +537,35 @@
   list-style-type: none;
   gap: 20px;
 
-  font-family: Montserrat;
+}
+
+.sellers-menu__tab-button {
+  width: 177px;
+  height: 91px;
+
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+
+  border-color: transparent;
   font-size: 26px;
   font-weight: 600;
   line-height: 31.69px;
 }
 
-.sellers-menu__top-picks {
-  width: 177px;
-  height: 91px;
-  border-radius: 50px;
+.sellers-menu-active {
+  border-color: transparent;
   background: rgba(16, 185, 129, 1);
-
-  text-align: center;
   color: rgba(255, 255, 255, 1);
-
-  padding-top: 25px;
 }
 
-.sellers-menu__watches {
-  width: 118px;
-  height: 32px;
-
-  text-align: center;
-  color: rgba(0, 0, 0, 1);
-
-  padding-top: 25px;
-}
-
-.sellers-product {
+.sellers-product-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 85px;
   margin-top: 90px;
 }
 
@@ -574,7 +573,7 @@
   display: flex;
   flex-direction: column;
 
-  margin-left: 85px;
+  /* margin-left: 85px; */
 }
 
 .sellers-product__card-pick {
