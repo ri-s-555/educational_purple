@@ -39,8 +39,15 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.css$/, // Обработка CSS файлов
-          use: ['style-loader', 'css-loader'],
+          use: [
+            'style-loader',
+            {
+              loader: 'css-loader',
+              options: { importLoaders: 1 } // Позволяет Webpack корректно обрабатывать @import в CSS
+            }
+          ],
         },
+        
         // Добавьте другие правила загрузчиков по мере необходимости
       ],
     },
