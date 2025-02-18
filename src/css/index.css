@@ -9,6 +9,7 @@
     width: 1440px;
     margin: 0 auto;
     /* background: #fff; */
+    margin-bottom: 40px;
   }
 
 @import "./head.css";

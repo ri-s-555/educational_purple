@@ -52,7 +52,10 @@
 }
 .trending-earphones__product-wrapper {
   display: flex;
-  margin-top: 90px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 85px;
+  margin-top: 50px;
 }
 
 
@@ -60,7 +63,7 @@
   display: flex;
   flex-direction: column;
 
-  margin-left: 85px;
+  /* margin-left: 85px; */
 }
 .trending-earphones__product__card__pick {
   display: flex;
@@ -93,8 +96,10 @@
   border-radius: 50px;
 
   position: absolute;
-  top: 15px;
-  right: -55px;
+  /* top: 15px;
+  right: -55px; */
+  top: -220px;
+  left: 160px;
 }
 .trending-earphones__product__card__pick__descr {
   display: flex;

@@ -263,7 +263,7 @@ const cardTrend_3 = [
 ]
 
 
-function gidrationTemplate(array, wrapperString) {
+function gidrationTemplate_2(array, wrapperString) {
   let cardsArray = [];
 
   array.forEach((item) => {
@@ -285,25 +285,43 @@ function switchTabButton_2 () {
   const sellersMenu = document.querySelector(".sellers-menu");
   sellersMenu.addEventListener("click", (event) => {
     sellersMenu.querySelectorAll("button").forEach((item) => {
-      console.dir(item);
       item.classList.remove("sellers-menu-active");
     });
 
+
+    
     if (event.target.innerText == "Top Picks") {
-      gidrationTemplate(cardSell_1, ".sellers-product-wrapper");
+      gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
       event.target.classList.add("sellers-menu-active");
     } else {
-      gidrationTemplate(cardSell_2, ".sellers-product-wrapper");
+      gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
       event.target.classList.add("sellers-menu-active");
     }
   });
 }
 switchTabButton_2();
 
+
+function gidrationTemplate_3(array, wrapperString) {
+  let cardsArray = [];
+
+  array.forEach((item) => {
+    cardsArray.push(creatCardTrend(item)); //гидрация
+  });
+  console.log(cardsArray);
+
+  const cardsWrapper = document.querySelector(wrapperString);
+  cardsWrapper.innerHTML = "";
+
+  cardsArray.forEach((item) => {
+    cardsWrapper.appendChild(item);
+  });
+}
+
 gidrationTemplate_3(cardTrend_3, ".trending-earphones__product-wrapper");
 
 function switchTabButton_3 () {
-  const trendMenu = document.querySelector(".sellers-menu");
+  const trendMenu = document.querySelector(".trending-earphones__menu");
   trendMenu.addEventListener("click", (event) => {
     trendMenu.querySelectorAll("button").forEach((item) => {
       console.dir(item);
@@ -311,16 +329,16 @@ function switchTabButton_3 () {
     });
 
     if (event.target.innerText == "Earbuds") {
-      gidrationTemplate(cardTrend_1, ".trending-earphones__product-wrapper");
-      event.target.classList.add("trending-earphones__menu__active");}
-    if (event.target.innerText == "Wireless") {
-      gidrationTemplate(cardTrend_2, ".trending-earphones__product-wrapper");
+      gidrationTemplate_3(cardTrend_1, ".trending-earphones__product-wrapper");
       event.target.classList.add("trending-earphones__menu__active");
-    } 
-    else {
-      gidrationTemplate(cardTrend_3, ".trending-earphones__product-wrapper");
+  } else if (event.target.innerText == "Wireless") {
+    gidrationTemplate_3(cardTrend_2, ".trending-earphones__product-wrapper");
       event.target.classList.add("trending-earphones__menu__active");
-    }
+  } else {
+    gidrationTemplate_3(cardTrend_3, ".trending-earphones__product-wrapper");
+      event.target.classList.add("trending-earphones__menu__active");
+  }
+  
   });
 }
 switchTabButton_3();
