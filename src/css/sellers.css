@@ -75,16 +75,6 @@
     height: 438px;
     border-radius: 25px;
   }
-  .card-color_mint {
-    background: rgba(236, 254, 244, 1);
-  }
-  
-  .card-color_blu {
-    background: rgba(201, 242, 255, 1);
-  }
-  .card-color_purpure {
-    background: rgba(229, 213, 255, 1);
-  }
   
   .sellers-product__card-pick_img-product {
     width: 196px;
@@ -108,10 +98,6 @@
     top: -220px;
     left: 160px;
     /*z-index: 1;*/
-  }
-  
-  .card-color_green {
-    background: rgba(16, 185, 129, 1); 
   }
   
   .sellers-product__card-pick_descr {

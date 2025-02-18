@@ -83,15 +83,7 @@
     height: 438px;
     border-radius: 25px;
   }
-  .card-color_blu-3 {
-    background: rgba(224, 239, 255, 1);
-  }
-  .card-color_blu-4 {
-    background: rgba(232, 249, 255, 1);
-  }
-  .card-color_blu-5 {
-    background: rgba(211, 251, 251, 1);
-  }
+
   .trending-earphones__product__card__pick__img {
     position: relative;
   }
