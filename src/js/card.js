@@ -5,7 +5,8 @@ export function creatCard ({color, price, name, review }) {
     <div class="sellers-product__card">
                 <div class="sellers-product__card-pick ${color}">
                     <div class="sellers-product__card-pick_img">
-                        <img class="sellers-product__card-pick_img-product" src="./img/Top_Picks_1.png" alt="Top_Picks_1">
+                        <img class="sellers-product__card-pick_img-product" src="./img/Top_Picks_1.png"
+                            alt="Top_Picks_1_Boat kerz 333">
                     </div>
                     <div class="sellers-product__card-pick_descr">
                         <div class="sellers-product__card-pick_descr__name">${name}</div>
@@ -41,6 +42,7 @@ export function creatCard ({color, price, name, review }) {
                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
                                         fill="#C00C00" />
                                 </svg>
+
                             </div>
                             <div class="sellers-product__card-pick_descr__reviews-text">${review} Reviews</div>
                         </div>
