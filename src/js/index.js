@@ -1,4 +1,4 @@
-// import "../css/style.css";
+import "../css/style.css";
 console.log("hello");
 
 console.log("Hello, Webpack!");
