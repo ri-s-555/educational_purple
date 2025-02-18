@@ -1,3 +1,8 @@
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  background: #fff;
+}
 .new-launches {
   background: rgba(132, 94, 194, 1);
   display: flex;
