@@ -8,9 +8,9 @@ import { creatCard } from "./card.js";
 const cards_1 = [
   {
     color: "card-color_mint",
-    price: 0,
-    name: "",
-    review: 0,
+    price: 20,
+    name: "Boat Rockerz 333",
+    review: 75,
   },
   {
     color: "card-color_mint",

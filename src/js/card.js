@@ -5,8 +5,8 @@ export function creatCard ({color, price, name, review }) {
     <div class="sellers-product__card">
                 <div class="sellers-product__card-pick ${color}">
                     <div class="sellers-product__card-pick_img">
-                        <img class="sellers-product__card-pick_img-product" src="./img/Top_Picks_2.png"
-                            alt="Top_Picks_2_Boat kerz 234">
+                        <img class="sellers-product__card-pick_img-product" src="./img/Top_Picks_1.png"
+                            alt="Top_Picks_1_Boat kerz 333">
                     </div>
                     <div class="sellers-product__card-pick_descr">
                         <div class="sellers-product__card-pick_descr__name">${name}</div>
