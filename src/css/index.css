@@ -1,1 +1,17 @@
-@import "./home_page.css"
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+  }
+  
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+
+@import "./home_page.css";
+@import "./featured_products.css";
