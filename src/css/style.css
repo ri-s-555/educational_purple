@@ -1,4 +1,4 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -232,7 +232,7 @@
   height: 60px;
   border: 2px solid hsl(0, 0%, 100%);
   border-radius: 50%;
-  /* background-image: url('/img/Reviews_1.png'); */
+  /* background-image: url('/img/Reviews_1.png'); 
 }
 
 .latest-product__descr_reviews__img-img:nth-child(2) {
@@ -347,9 +347,10 @@
   bottom: -30px;
   right: 40px;
 }
-/* 
+
 /* страница 2*/
 
+/*
 .featured-products {
   background: rgba(132, 94, 194, 1);
   display: flex;
@@ -385,11 +386,6 @@
 }
 
 .featured-products-sticker_img-img {
-  /*width: 272px;
-  height: 477px;
-  border-radius: 135px;
-  margin: 10px;*/
-
   width: 222px;
   height: 393px;
   border-radius: 135px;
@@ -491,7 +487,6 @@
   border-radius: 10px;
 
   background: transparent;
-  /*box-shadow: 0px 25px 50px 0px rgba(255, 255, 255, 0.1); */
   border-color: rgba(0, 0, 0, 0);
 
   font-family: Montserrat;
@@ -507,7 +502,7 @@
 } */
 
 /* страница 3*/
-
+/*
 .sellers {
   background: #fff;
 
@@ -572,8 +567,6 @@
 .sellers-product__card {
   display: flex;
   flex-direction: column;
-
-  /* margin-left: 85px; */
 }
 
 .sellers-product__card-pick {
@@ -618,7 +611,6 @@
   position: absolute;
   top: -220px;
   left: 160px;
-  /*z-index: 1;*/
 }
 
 .card-color_green {
@@ -705,6 +697,7 @@
 
 /* страница 4
 */
+/*
 .trending-earphones {
   background: #fff;
 
@@ -888,6 +881,7 @@
 
 /* страница 5
 */
+/*
 .new-launches {
   background: rgba(132, 94, 194, 1);
   display: flex;
@@ -1008,7 +1002,7 @@
 
 /* страница 6
 */
-
+/*
 .futter {
   display: flex;
   flex-direction: column;
@@ -1155,4 +1149,5 @@
   width: 133.96px;
   display: flex;
   justify-content: space-between;
-}
+} 
+*/
