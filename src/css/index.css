@@ -5,7 +5,11 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
   }
-  
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+    background: #fff;
+  }
 
 @import "./head.css";
 @import "./featured_products.css";
