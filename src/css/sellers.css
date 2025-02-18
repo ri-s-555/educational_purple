@@ -12,7 +12,6 @@
     width: 244px;
     height: 54px;
   
-    font-family: Montserrat;
     font-size: 44px;
     font-weight: 600;
     line-height: 53.64px;
@@ -94,7 +93,6 @@
   }
   
   .sellers-product__card-pick_img-save {
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 600;
     line-height: 21.94px;
@@ -130,7 +128,6 @@
   }
   
   .sellers-product__card-pick_descr__name {
-    font-family: Montserrat;
     font-size: 21px;
     font-weight: 500;
     line-height: 35px;
@@ -151,7 +148,6 @@
   }
   
   .sellers-product__card-pick_descr__reviews-text {
-    font-family: Montserrat;
     font-size: 11px;
     font-weight: 500;
     line-height: 35px;
@@ -161,7 +157,6 @@
   }
   
   .sellers-product__card-pick_descr__price {
-    font-family: Montserrat;
     font-size: 21px;
     font-weight: 600;
     line-height: 25.6px;
@@ -178,7 +173,6 @@
   
     background: rgba(16, 185, 129, 1);
   
-    font-family: Montserrat;
     font-size: 21px;
     font-weight: 600;
     line-height: 25.6px;
