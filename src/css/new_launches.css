@@ -1,0 +1,118 @@
+
+.new-launches {
+    background: rgba(132, 94, 194, 1);
+    display: flex;
+    justify-content: space-around;
+  }
+  .new-launches__back {
+    padding-top: 300px;
+    padding-left: 70px;
+  }
+  .new-launches__next {
+    padding-top: 300px;
+    padding-right: 70px;
+  }
+  .new-launches__sticker {
+    width: 521.36px;
+    height: 468px;
+    margin-top: 112px;
+    margin-bottom: 61px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .new-launches__sticker__img {
+    width: 237.79px;
+    height: 417px;
+    border-radius: 135px;
+    margin: 17px;
+  }
+  .new-launches__descr {
+    display: flex;
+    flex-direction: column;
+  
+    margin-top: 73px;
+    margin-left: 85px;
+  }
+  .new-launches__descr__text__h {
+    width: 559.39px;
+    height: 54px;
+  
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 73.64px;
+    text-align: left;
+  
+    color: rgba(255, 255, 255, 1);
+  }
+  .new-launches__descr__text__p {
+    width: 570px;
+  
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  
+    margin-top: 29px;
+    margin-bottom: 24px;
+  }
+  .new-launches__descr__price {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+  .new-launches__descr__price__header {
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+  .new-launches__descr__price__value {
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 37.79px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+  .new-launches__descr__option-color__y {
+    margin-left: 31px;
+    margin-right: 35px;
+  }
+  .new-launches__descr__button__add {
+    width: 263.18px;
+    height: 70px;
+    border-radius: 10px;
+  
+    background: rgba(16, 185, 129, 1);
+    box-shadow: 0px 25px 50px 0px rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0);
+  
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25.6px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+  
+    margin-top: 50px;
+  }
+  
+  .new-launches__descr__button__more {
+    width: 263.18px;
+    height: 70px;
+    border-radius: 10px;
+  
+    background: transparent;
+    box-shadow: 0px 3px 7px 0px rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0);
+  
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25.6px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+  
+    margin-top: 50px;
+  }
