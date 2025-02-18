@@ -1,5 +1,5 @@
 
-export function creatCardSel ({color, price, name, review }) {
+export function creatCardSell ({color, price, name, review }) {
     const elem = document.createElement ("div")
     elem.innerHTML = `
     <div class="sellers-product__card">
