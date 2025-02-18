@@ -1,12 +1,12 @@
 
-export function creatCard ({color, price, name, review }) {
+export function creatCardSel ({color, price, name, review }) {
     const elem = document.createElement ("div")
     elem.innerHTML = `
     <div class="sellers-product__card">
                 <div class="sellers-product__card-pick ${color}">
                     <div class="sellers-product__card-pick_img">
                         <img class="sellers-product__card-pick_img-product" src="./img/Top_Picks_1.png"
-                            alt="Top_Picks_1_Boat kerz 333">
+                            alt="${name}">
                     </div>
                     <div class="sellers-product__card-pick_descr">
                         <div class="sellers-product__card-pick_descr__name">${name}</div>
@@ -54,4 +54,3 @@ export function creatCard ({color, price, name, review }) {
     `
     return elem
 }
-

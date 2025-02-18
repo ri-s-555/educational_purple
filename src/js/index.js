@@ -1,9 +1,8 @@
 import "../css/index.css";
-console.log("hello");
 
 console.log("Hello, Webpack!");
 
-import { creatCard } from "./card.js";
+import { creatCardSell } from "./card.js";
 
 const cards_1 = [
   {
@@ -91,8 +90,7 @@ function gidrationTemplate(array, wrapperString) {
   console.log(cardsArray);
 
   const cardsWrapper = document.querySelector(wrapperString);
-
-  cardsWrapper.innerHTML = ""
+  cardsWrapper.innerHTML = "";
 
   cardsArray.forEach((item) => {
     cardsWrapper.appendChild(item);
@@ -101,32 +99,21 @@ function gidrationTemplate(array, wrapperString) {
 
 gidrationTemplate(cards_2, ".sellers-product-wrapper");
 
-
-
 function switchTabButton() {
   const sellersMenu = document.querySelector(".sellers-menu");
-  sellersMenu.addEventListener ("click", (event) => {
-    // по клику на кнопку меняется цвет кнопки и открывается другой массив
-    
-    // console.dir(event.target) 
+  sellersMenu.addEventListener("click", (event) => {
+    sellersMenu.querySelectorAll("button").forEach((item) => {
+      console.dir(item);
+      item.classList.remove("sellers-menu-active");
+    });
 
-    sellersMenu.querySelectorAll ("button").forEach((item)=>{
-        console.dir(item)
-        item.classList.remove ("sellers-menu-active")
-    })
-
-if (event.target.innerText == "Top Picks") {
-    gidrationTemplate(cards_1, ".sellers-product-wrapper");
-    event.target.classList.add ("sellers-menu-active")
+    if (event.target.innerText == "Top Picks") {
+      gidrationTemplate(cards_1, ".sellers-product-wrapper");
+      event.target.classList.add("sellers-menu-active");
+    } else {
+      gidrationTemplate(cards_2, ".sellers-product-wrapper");
+      event.target.classList.add("sellers-menu-active");
+    }
+  });
 }
-else {
-    gidrationTemplate(cards_2, ".sellers-product-wrapper");
-    event.target.classList.add ("sellers-menu-active")
-}
-
-
-
-  })
-}
-switchTabButton()
-
+switchTabButton();
