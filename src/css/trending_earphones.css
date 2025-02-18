@@ -30,42 +30,32 @@
   font-weight: 600;
   line-height: 31.69px;
 }
-.trending-earphones__menu__e {
+.trending-earphones__menu__tab-button {
   width: 177px;
   height: 91px;
+
   border-radius: 50%;
-  border: 0px;
-  background: rgba(16, 185, 129, 1);
-
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 31.69px;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-}
-.trending-earphones__menu__w {
-  width: 177px;
-  height: 91px;
-  border-radius: 50%;
-  border: 0px;
-  background: rgba(16, 185, 129, 0);
-
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 31.69px;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  background: rgb(255, 255, 255);
 
   text-align: center;
   color: rgba(0, 0, 0, 1);
+
+  border-color: transparent;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.69px;
 }
-.trending-earphones__product {
+.trending-earphones__menu__active {
+  border-color: transparent;
+  background: rgba(16, 185, 129, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.trending-earphones__product-wrapper {
   display: flex;
   margin-top: 90px;
 }
+
+
 .trending-earphones__product__card {
   display: flex;
   flex-direction: column;
