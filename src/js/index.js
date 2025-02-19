@@ -1,3 +1,10 @@
+import createHead from "./head.js";
+import createFeaturedProducts from "./featured_products.js";
+import createSellers from "./sellers.js";
+import createTrendingEarphones from "./trending_earphones.js";
+import createNewLaunches from "./new_launches.js";
+import createFooter from "./footer.js";
+
 import "../css/index.css";
 
 import { creatCardSell } from "./card.js";
@@ -9,8 +16,9 @@ const cardSell_1 = [
     colorSave: "",
     name: "",
     review: 0,
-    price: 0,
+    price: 20,
     save: 0,
+    image: "./img/Top_Picks_1.png",
   },
   {
     color: "card-color_mint",
@@ -61,6 +69,7 @@ const cardSell_2 = [
     review: 0,
     price: 0,
     save: 0,
+    image: "./img/Top_Picks_2.png",
   },
   {
     color: "card-color_purpure",
@@ -106,11 +115,11 @@ const cardSell_2 = [
 const cardTrend_1 = [
   {
     color: "card-color_blu-3",
-    colorSave: "",
+    colorSave: "card-color_green",
     name: "",
     review: 0,
-    price: 0,
-    save: 0,
+    price: 20,
+    save: 60,
   },
   {
     color: "card-color_blu-3",
@@ -152,7 +161,7 @@ const cardTrend_1 = [
     price: 0,
     save: 0,
   },
-]
+];
 const cardTrend_2 = [
   {
     color: "card-color_blu-4",
@@ -210,15 +219,15 @@ const cardTrend_2 = [
     price: 0,
     save: 0,
   },
-]
+];
 const cardTrend_3 = [
   {
-    color: "card-color_blu-5",
-    colorSave: "",
+    color: "card-color_blu-3",
+    colorSave: "card-color_green",
     name: "",
     review: 0,
-    price: 0,
-    save: 0,
+    price: 20,
+    save: 60,
   },
   {
     color: "card-color_blu-5",
@@ -260,8 +269,7 @@ const cardTrend_3 = [
     price: 0,
     save: 0,
   },
-]
-
+];
 
 function gidrationTemplate_2(array, wrapperString) {
   let cardsArray = [];
@@ -279,17 +287,14 @@ function gidrationTemplate_2(array, wrapperString) {
   });
 }
 
-gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
 
-function switchTabButton_2 () {
+function switchTabButton_2() {
   const sellersMenu = document.querySelector(".sellers-menu");
   sellersMenu.addEventListener("click", (event) => {
     sellersMenu.querySelectorAll("button").forEach((item) => {
       item.classList.remove("sellers-menu-active");
     });
 
-
-    
     if (event.target.innerText == "Top Picks") {
       gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
       event.target.classList.add("sellers-menu-active");
@@ -299,7 +304,6 @@ function switchTabButton_2 () {
     }
   });
 }
-switchTabButton_2();
 
 
 function gidrationTemplate_3(array, wrapperString) {
@@ -318,9 +322,7 @@ function gidrationTemplate_3(array, wrapperString) {
   });
 }
 
-gidrationTemplate_3(cardTrend_3, ".trending-earphones__product-wrapper");
-
-function switchTabButton_3 () {
+function switchTabButton_3() {
   const trendMenu = document.querySelector(".trending-earphones__menu");
   trendMenu.addEventListener("click", (event) => {
     trendMenu.querySelectorAll("button").forEach((item) => {
@@ -331,14 +333,29 @@ function switchTabButton_3 () {
     if (event.target.innerText == "Earbuds") {
       gidrationTemplate_3(cardTrend_1, ".trending-earphones__product-wrapper");
       event.target.classList.add("trending-earphones__menu__active");
-  } else if (event.target.innerText == "Wireless") {
-    gidrationTemplate_3(cardTrend_2, ".trending-earphones__product-wrapper");
+    } else if (event.target.innerText == "Wireless") {
+      gidrationTemplate_3(cardTrend_2, ".trending-earphones__product-wrapper");
       event.target.classList.add("trending-earphones__menu__active");
-  } else {
-    gidrationTemplate_3(cardTrend_3, ".trending-earphones__product-wrapper");
+    } else {
+      gidrationTemplate_3(cardTrend_3, ".trending-earphones__product-wrapper");
       event.target.classList.add("trending-earphones__menu__active");
-  }
-  
+    }
   });
 }
+
+const bodyWrapper = document.querySelector("body");
+bodyWrapper.appendChild(createHead ());
+bodyWrapper.appendChild( createFeaturedProducts())
+bodyWrapper.appendChild( createSellers())
+bodyWrapper.appendChild( createTrendingEarphones())
+bodyWrapper.appendChild( createNewLaunches())
+bodyWrapper.appendChild( createFooter())
+
+gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
+switchTabButton_2();
+gidrationTemplate_3(cardTrend_3, ".trending-earphones__product-wrapper");
 switchTabButton_3();
+
+// папка с фунц utils (утилиты)
+// папка с компонентами (меню, карточки, кнопки) components 
+// в секция вызвать функции и компоненты

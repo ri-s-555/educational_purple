@@ -1,9 +1,9 @@
-.futter {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.futter__start {
+.footer__start {
   width: 1068px;
   height: 91px;
   margin-left: 186px;
@@ -13,7 +13,7 @@
   justify-content: flex-end;
   align-items: center;
 }
-.futter__start__text {
+.footer__start__text {
   font-family: "DM Sans";
   font-size: 22px;
   font-weight: 400;
@@ -24,7 +24,7 @@
 
   margin-right: 40px;
 }
-.futter__start__button {
+.footer__start__button {
   width: 175px;
   height: 50px;
   background: rgba(16, 185, 129, 1);
@@ -38,17 +38,17 @@
   text-align: center;
   color: rgba(255, 255, 255, 1);
 }
-.futter__nav {
+.footer__nav {
   width: 1068px;
   margin-left: 186px;
   display: flex;
   gap: 100px;
 }
-.futter__nav__subscribe {
+.footer__nav__subscribe {
   width: 289px;
   height: 139px;
 }
-.futter__nav__subscribe__text {
+.footer__nav__subscribe__text {
   font-family: "DM Sans";
   font-size: 22px;
   font-weight: 400;
@@ -59,13 +59,13 @@
 
   margin-top: 40px;
 }
-.futter__nav__subscribe__imput {
+.footer__nav__subscribe__imput {
   display: flex;
   margin-top: 30px;
   width: 289px;
   height: 50px;
 }
-.futter__nav__subscribe__imput__email {
+.footer__nav__subscribe__imput__email {
   width: 239px;
   height: 50px;
 
@@ -80,22 +80,22 @@
   text-align: left;
   color: rgba(17, 17, 17, 1);
 }
-.futter__nav__subscribe__imput__button {
+.footer__nav__subscribe__imput__button {
   width: 50px;
   height: 50px;
   border: 0px;
 }
-.futter__nav__sevices ul {
+.footer__nav__sevices ul {
   list-style-type: none;
   margin-top: 40px;
   margin-right: 72px;
 }
-.futter__nav__about ul {
+.footer__nav__about ul {
   list-style-type: none;
   margin-top: 40px;
   margin-right: 71px;
 }
-.futter__nav__help ul {
+.footer__nav__help ul {
   list-style-type: none;
   margin-top: 40px;
 }
@@ -121,7 +121,7 @@
 
   margin-bottom: 20px;
 }
-.futter__info {
+.footer__info {
   width: 1068px;
   margin-top: 70px;
   margin-left: 186px;
@@ -134,13 +134,13 @@
   letter-spacing: -0.20454545319080353px;
   text-align: left;
 }
-.futter__info__terms {
+.footer__info__terms {
   margin-right: 39px;
 }
-.futter__info__policy {
+.footer__info__policy {
   margin-right: 653px;
 }
-.futter__info__contacts {
+.footer__info__contacts {
   width: 133.96px;
   display: flex;
   justify-content: space-between;

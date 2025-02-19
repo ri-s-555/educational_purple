@@ -1,11 +1,12 @@
 
-export function creatCardSell ({color, colorSave, name, review, price, save}) {
+export function creatCardSell ({color, colorSave, name, review, price, save, image}) {
+
     const elem = document.createElement ("div")
     elem.innerHTML = `
     <div class="sellers-product__card">
                 <div class="sellers-product__card-pick ${color}">
                     <div class="sellers-product__card-pick_img">
-                        <img class="sellers-product__card-pick_img-product" src="./img/Top_Picks_1.png"
+                        <img class="sellers-product__card-pick_img-product" src="${image}"
                             alt="${name}">
                     </div>
                     <div class="sellers-product__card-pick_descr">
@@ -113,64 +114,3 @@ export function creatCardTrend ({color, colorSave, name, review, price, save}) {
     return elem
 }
 
-// function gidrationTemplate_2(array, wrapperString) {
-//     let cardsArray = [];
-  
-//     array.forEach((item) => {
-//       cardsArray.push(creatCardSell(item)); // гидрация
-//     });
-//     console.log(cardsArray);
-  
-//     const cardsWrapper = document.querySelector(wrapperString);
-//     cardsWrapper.innerHTML = "";
-  
-//     cardsArray.forEach((item) => {
-//       cardsWrapper.appendChild(item);
-//     });
-//   }
-  
-//   gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
-  
-//   function switchTabButton_2 () {
-//     const sellersMenu = document.querySelector(".sellers-menu");
-//     sellersMenu.addEventListener("click", (event) => {
-//       sellersMenu.querySelectorAll("button").forEach((item) => {
-//         item.classList.remove("sellers-menu-active");
-//       });
-  
-//       const targetText = event.target.textContent.trim();
-  
-//       if (targetText === "Top Picks") {
-//         gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
-//         event.target.classList.add("sellers-menu-active");
-//       } else if (targetText === "Category 2") {
-//         gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
-//         event.target.classList.add("sellers-menu-active");
-//       } else if (targetText === "Category 3") {
-//         gidrationTemplate_2(cardSell_3, ".sellers-product-wrapper");
-//         event.target.classList.add("sellers-menu-active");
-//       }
-//     });
-//   }
-//   switchTabButton_2();
-  
-/*
-function switchTabButton_2 () {
-  const sellersMenu = document.querySelector(".sellers-menu");
-  sellersMenu.addEventListener("click", (event) => {
-    sellersMenu.querySelectorAll("button").forEach((item) => {
-      item.classList.remove("sellers-menu-active");
-    });
-
-
-    
-    if (event.target.innerText == "Top Picks") {
-      gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
-      event.target.classList.add("sellers-menu-active");
-    } else {
-      gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
-      event.target.classList.add("sellers-menu-active");
-    }
-  });
-}
-switchTabButton_2(); */
