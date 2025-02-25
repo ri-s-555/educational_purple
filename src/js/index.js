@@ -7,8 +7,8 @@ import createFooter from "./footer.js";
 
 import "../css/index.css";
 
-import { creatCardSell } from "./card.js";
-import { creatCardTrend } from "./card.js";
+import { creatCardSell } from "./components/card.js";
+import { creatCardTrend } from "./components/card.js";
 
 const cardSell_1 = [
   {
