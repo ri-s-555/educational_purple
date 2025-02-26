@@ -20,7 +20,7 @@
   color: rgba(16, 185, 129, 1);
 }
 
-.header-buttons {
+/* .header-buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -122,6 +122,10 @@
   line-height: 60px;
   text-align: center;
   color: rgba(255, 255, 255, 1);
+} */
+
+.hidden {
+  display: none;
 }
 
 .menu ul {
