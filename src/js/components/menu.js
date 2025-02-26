@@ -10,10 +10,7 @@
 //   tabs.forEach((tab) => {
 //     const li = document.createElement("li");
 //     const button = document.createElement("button");
-//     button.classList.add(
-//       "sellers-menu__tab-button",
-//       "trending-earphones__menu__tab-button"
-//     );
+//     button.classList.add("menu__tab_button");
 //     button.textContent = tab;
 //     li.appendChild(button);
 //     ul.appendChild(li);
@@ -34,7 +31,7 @@
     tabs.forEach((tab) => {
       const li = document.createElement("li");
       const button = document.createElement("button");
-      button.classList.add("sellers-menu__tab-button");
+      button.classList.add("menu__tab_button");
       button.textContent = tab;
       li.appendChild(button);
       ul.appendChild(li);
@@ -54,7 +51,7 @@
     tabs.forEach((tab) => {
       const li = document.createElement("li");
       const button = document.createElement("button");
-      button.classList.add("trending-earphones__menu__tab-button");
+      button.classList.add("menu__tab_button");
       button.textContent = tab;
       li.appendChild(button);
       ul.appendChild(li);

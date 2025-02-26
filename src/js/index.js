@@ -287,24 +287,22 @@ function gidrationTemplate_2(array, wrapperString) {
   });
 }
 
-
 function switchTabButton_2() {
   const sellersMenu = document.querySelector(".sellers-menu");
   sellersMenu.addEventListener("click", (event) => {
     sellersMenu.querySelectorAll("button").forEach((item) => {
-      item.classList.remove("sellers-menu-active");
+      item.classList.remove("menu__tab_button_active");
     });
 
     if (event.target.innerText == "Top Picks") {
       gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
-      event.target.classList.add("sellers-menu-active");
+      event.target.classList.add("menu__tab_button_active");
     } else {
       gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
-      event.target.classList.add("sellers-menu-active");
+      event.target.classList.add("menu__tab_button_active");
     }
   });
 }
-
 
 function gidrationTemplate_3(array, wrapperString) {
   let cardsArray = [];
@@ -327,18 +325,18 @@ function switchTabButton_3() {
   trendMenu.addEventListener("click", (event) => {
     trendMenu.querySelectorAll("button").forEach((item) => {
       console.dir(item);
-      item.classList.remove("trending-earphones__menu__active");
+      item.classList.remove("menu__tab_button_active");
     });
 
     if (event.target.innerText == "Earbuds") {
       gidrationTemplate_3(cardTrend_1, ".trending-earphones__product-wrapper");
-      event.target.classList.add("trending-earphones__menu__active");
+      event.target.classList.add("menu__tab_button_active");
     } else if (event.target.innerText == "Wireless") {
       gidrationTemplate_3(cardTrend_2, ".trending-earphones__product-wrapper");
-      event.target.classList.add("trending-earphones__menu__active");
+      event.target.classList.add("menu__tab_button_active");
     } else {
       gidrationTemplate_3(cardTrend_3, ".trending-earphones__product-wrapper");
-      event.target.classList.add("trending-earphones__menu__active");
+      event.target.classList.add("menu__tab_button_active");
     }
   });
 }
