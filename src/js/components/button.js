@@ -45,8 +45,18 @@ function searchTabButton() {
     searchButton.addEventListener("click", handleSearchButtonClick);
 }
 
+// универсальная функция для любой кнопки, посмотреть что можно сделать с классами
+document.addEventListener('DOMContentLoaded', function() {
+    const searchButton = document.querySelector('.featured-products-descr_button-add');
 
+    searchButton.addEventListener('click', function() {
+        searchButton.classList.add('tab_button_active_show');
 
+        setTimeout(function() {
+            searchButton.classList.remove('tab_button_active_show');
+        }, 5000); // 5000 мс / 5 сек
+    });
+});
 
 
 
