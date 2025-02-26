@@ -6,6 +6,10 @@ import createNewLaunches from "./new_launches.js";
 import createFooter from "./footer.js";
 
 import "../css/index.css";
+import "../js/utils/function.js";
+// import "../js/components/menu.js";
+import "../js/components/button.js";
+// import "../js/components/card.js";
 
 import { creatCardSell } from "./components/card.js";
 import { creatCardTrend } from "./components/card.js";
@@ -122,6 +126,7 @@ const cardSell_2 = [
     image: "./img/Top_Picks_3.png",
   },
 ];
+
 const cardTrend_1 = [
   {
     color: "card-color_blu-3",
@@ -291,7 +296,7 @@ const cardTrend_3 = [
   },
 ];
 
-function gidrationTemplate_2(array, wrapperString) {
+export function gidrationTemplate_2(array, wrapperString) {
   let cardsArray = [];
 
   array.forEach((item) => {
@@ -306,7 +311,7 @@ function gidrationTemplate_2(array, wrapperString) {
   });
 }
 
-function switchTabButton_2() {
+export function switchTabButton_2() { // сделать 1 уни функцию
   const sellersMenu = document.querySelector(".sellers-menu");
   sellersMenu.addEventListener("click", (event) => {
     sellersMenu.querySelectorAll("button").forEach((item) => {
@@ -321,9 +326,9 @@ function switchTabButton_2() {
       event.target.classList.add("menu__tab_button_active");
     }
   });
-}
+} 
 
-function gidrationTemplate_3(array, wrapperString) {
+export function gidrationTemplate_3(array, wrapperString) {
   let cardsArray = [];
 
   array.forEach((item) => {
@@ -338,7 +343,7 @@ function gidrationTemplate_3(array, wrapperString) {
   });
 }
 
-function switchTabButton_3() {
+export function switchTabButton_3() {
   const trendMenu = document.querySelector(".trending-earphones__menu");
   trendMenu.addEventListener("click", (event) => {
     trendMenu.querySelectorAll("button").forEach((item) => {
@@ -358,13 +363,17 @@ function switchTabButton_3() {
   });
 }
 
+
+
+
+
 const bodyWrapper = document.querySelector("body");
 bodyWrapper.appendChild(createHead ());
-bodyWrapper.appendChild( createFeaturedProducts())
-bodyWrapper.appendChild( createSellers())
-bodyWrapper.appendChild( createTrendingEarphones())
-bodyWrapper.appendChild( createNewLaunches())
-bodyWrapper.appendChild( createFooter())
+bodyWrapper.appendChild(createFeaturedProducts())
+bodyWrapper.appendChild(createSellers())
+bodyWrapper.appendChild(createTrendingEarphones())
+bodyWrapper.appendChild(createNewLaunches())
+bodyWrapper.appendChild(createFooter())
 
 gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
 switchTabButton_2();
@@ -374,6 +383,6 @@ switchTabButton_3();
 // папка с фунц utils (утилиты)
 // папка с компонентами (меню, карточки, кнопки) components 
 // в секция вызвать функции и компоненты
-//вызов функции и передача элемента в функцию / как работает функция 
+// вызов функции и передача элемента в функцию / как работает функция 
 // дебаг 
 // ожидание - вызов - ГДЕ вызов - есть ли вызов - родитель - функции родителя

@@ -40,8 +40,7 @@
     nav.appendChild(ul);
     return nav;
   }
-
-
+  
   export  function createMenuTrend(tabs) {
     const nav = document.createElement("nav");
     nav.classList.add("trending-earphones__menu");

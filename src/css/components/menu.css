@@ -1,39 +1,38 @@
 .sellers-menu ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    gap: 20px;
-  }
-  
-.trending-earphones__menu ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    gap: 20px;
-  
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 31.69px;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  gap: 20px;
+}
 
-  .menu__tab_button {
-    width: 177px;
-    height: 91px;
-  
-    border-radius: 50%;
-    background: rgb(255, 255, 255);
-  
-    text-align: center;
-    color: rgba(0, 0, 0, 1);
-  
-    border-color: transparent;
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 31.69px;
-  }
-  
-  .menu__tab_button_active {
-    border-color: transparent;
-    background: rgba(16, 185, 129, 1);
-    color: rgba(255, 255, 255, 1);
-  }
+.trending-earphones__menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  gap: 20px;
+
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.69px;
+}
+.menu__tab_button {
+  width: 177px;
+  height: 91px;
+
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+
+  border-color: transparent;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.69px;
+}
+
+.menu__tab_button_active {
+  border-color: transparent;
+  background: rgba(16, 185, 129, 1);
+  color: rgba(255, 255, 255, 1);
+}
