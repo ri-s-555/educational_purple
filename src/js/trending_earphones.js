@@ -1,20 +1,22 @@
-import createMenu from "./components/menu.js";
 
-export default function createTrendingEarphones() {
-  const menu = createMenu(["Earbuds", "Wireless", "Wired"]);
 
-  const elem = document.createElement("div");
-  elem.classList.add("container", "trending-earphones");
-  elem.innerHTML = `
-      <div class="trending-earphones__header">Trending Earphones</div>
-    <div class="trending-earphones__menu-wrapper"></div>
-    <div class="trending-earphones__product-wrapper"></div>
-  `;
+// import createMenu from "./components/menu.js";
 
-  elem.querySelector(".trending-earphones__menu-wrapper").appendChild(menu);
+// export default function createTrendingEarphones() {
+//   const menu = createMenu(["Earbuds", "Wireless", "Wired"]);
 
-  return elem;
-}
+//   const elem = document.createElement("div");
+//   elem.classList.add("container", "trending-earphones");
+//   elem.innerHTML = `
+//       <div class="trending-earphones__header">Trending Earphones</div>
+//     <div class="trending-earphones__menu-wrapper"></div>
+//     <div class="trending-earphones__product-wrapper"></div>
+//   `;
+
+//   elem.querySelector(".trending-earphones__menu-wrapper").appendChild(menu);
+
+//   return elem;
+// }
 
 
 
@@ -197,3 +199,27 @@ export default function createTrendingEarphones() {
 //     `
 //     return elem
 // }
+
+import {createMenuTrend} from "./components/menu.js";
+
+export default function createTrendingEarphones() {
+  const menu = createMenuTrend (["Earbuds", "Wireless", "Wired"]);
+
+  const elem = document.createElement("div");
+  elem.classList.add("container", "trending-earphones");
+  elem.innerHTML = `
+    <div class="trending-earphones__header">Trending Earphones</div>
+    <div class="trending-earphones__menu-wrapper"></div>
+    <div class="trending-earphones__product-wrapper"></div>
+  `;
+
+  console.log(elem.innerHTML); // Для отладки
+  const menuWrapper = elem.querySelector(".trending-earphones__menu-wrapper");
+  console.log(menuWrapper); // Для отладки
+  menuWrapper.appendChild(menu);
+
+  return elem;
+}
+
+
+

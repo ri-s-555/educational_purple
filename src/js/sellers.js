@@ -1,7 +1,7 @@
-import createMenu from "./components/menu.js";
+import {createMenuSell} from "./components/menu.js";
 
 export default function createSellers() {
-  const menu = createMenu(["Top Picks", "Watches"]);
+  const menu = createMenuSell(["Top Picks", "Watches"]);
 
   const elem = document.createElement("div");
   elem.classList.add("container", "sellers");
