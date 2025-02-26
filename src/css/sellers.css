@@ -32,8 +32,6 @@
 .sellers-product__card {
   display: flex;
   flex-direction: column;
-
-  /* margin-left: 85px; */
 }
 
 .sellers-product__card-pick {
@@ -75,9 +73,7 @@
 
   width: 319px;
   height: 164px;
-
   border-radius: 25px;
-
   background: rgba(255, 255, 255, 1);
   padding: 31px 76px 30px 52px;
 }
@@ -123,7 +119,6 @@
 .sellers-product__card-button {
   width: 361px;
   height: 70px;
-
   border-radius: 10px;
 
   background: rgba(16, 185, 129, 1);
