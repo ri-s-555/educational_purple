@@ -5,127 +5,128 @@ import createTrendingEarphones from "./trending_earphones.js";
 import createNewLaunches from "./new_launches.js";
 import createFooter from "./footer.js";
 
-import "../css/index.css";
-import "../js/utils/function.js";
+import "../css/index.css"; //так работают только стили
+
+// import "../js/utils/function.js";
 // import "../js/components/menu.js";
-import "../js/components/button.js";
+// import "../js/components/button.js";
 // import "../js/components/card.js";
 
-import { creatCardSell } from "./components/card.js";
+// import { creatCardSell } from "./components/card.js";
 import { creatCardTrend } from "./components/card.js";
 
-const cardSell_1 = [
-  {
-    color: "card-color_mint",
-    colorSave: "",
-    name: "Boat Rockerz 333",
-    review: 75,
-    price: 20,
-    save: 0,
-    image: "./img/Top_Picks_1.png",
-  },
-  {
-    color: "card-color_mint",
-    colorSave: "",
-    name: "Boat kerz 234",
-    review: 80,
-    price: 50,
-    save: 0,
-    image: "./img/Top_Picks_2.png",
-  },
-  {
-    color: "card-color_mint",
-    colorSave: "card-color_green",
-    name: "Boat Rockerz 323",
-    review: 50,
-    price: 20,
-    save: 60,
-    image: "./img/Top_Picks_3.png",
-  },
-  {
-    color: "card-color_mint",
-    colorSave: "",
-    name: "Boat Rockerz 333",
-    review: 75,
-    price: 20,
-    save: 0,
-    image: "./img/Top_Picks_1.png",
-  },
-  {
-    color: "card-color_mint",
-    colorSave: "",
-    name: "Boat kerz 234",
-    review: 80,
-    price: 50,
-    save: 0,
-    image: "./img/Top_Picks_2.png",
-  },
-  {
-    color: "card-color_mint",
-    colorSave: "card-color_green",
-    name: "Boat Rockerz 323",
-    review: 50,
-    price: 20,
-    save: 60,
-    image: "./img/Top_Picks_3.png",
-  },
-];
-const cardSell_2 = [
-  {
-    color: "card-color_purpure",
-    colorSave: "",
-    name: "Boat Rockerz 333",
-    review: 75,
-    price: 20,
-    save: 0,
-    image: "./img/Top_Picks_1.png",
-  },
-  {
-    color: "card-color_purpure",
-    colorSave: "",
-    name: "Boat kerz 234",
-    review: 80,
-    price: 50,
-    save: 0,
-    image: "./img/Top_Picks_2.png",
-  },
-  {
-    color: "card-color_purpure",
-    colorSave: "card-color_blu",
-    name: "Boat Rockerz 323",
-    review: 50,
-    price: 20,
-    save: 60,
-    image: "./img/Top_Picks_3.png",
-  },
-  {
-    color: "card-color_purpure",
-    colorSave: "",
-    name: "Boat Rockerz 333",
-    review: 75,
-    price: 20,
-    save: 0,
-    image: "./img/Top_Picks_1.png",
-  },
-  {
-    color: "card-color_purpure",
-    colorSave: "",
-    name: "Boat kerz 234",
-    review: 80,
-    price: 50,
-    save: 0,
-    image: "./img/Top_Picks_2.png",
-  },
-  {
-    color: "card-color_purpure",
-    colorSave: "card-color_blu",
-    name: "Boat Rockerz 323",
-    review: 50,
-    price: 20,
-    save: 60,
-    image: "./img/Top_Picks_3.png",
-  },
-];
+// const cardSell_1 = [
+//   {
+//     color: "card-color_mint",
+//     colorSave: "",
+//     name: "Boat Rockerz 333",
+//     review: 75,
+//     price: 20,
+//     save: 0,
+//     image: "./img/Top_Picks_1.png",
+//   },
+//   {
+//     color: "card-color_mint",
+//     colorSave: "",
+//     name: "Boat kerz 234",
+//     review: 80,
+//     price: 50,
+//     save: 0,
+//     image: "./img/Top_Picks_2.png",
+//   },
+//   {
+//     color: "card-color_mint",
+//     colorSave: "card-color_green",
+//     name: "Boat Rockerz 323",
+//     review: 50,
+//     price: 20,
+//     save: 60,
+//     image: "./img/Top_Picks_3.png",
+//   },
+//   {
+//     color: "card-color_mint",
+//     colorSave: "",
+//     name: "Boat Rockerz 333",
+//     review: 75,
+//     price: 20,
+//     save: 0,
+//     image: "./img/Top_Picks_1.png",
+//   },
+//   {
+//     color: "card-color_mint",
+//     colorSave: "",
+//     name: "Boat kerz 234",
+//     review: 80,
+//     price: 50,
+//     save: 0,
+//     image: "./img/Top_Picks_2.png",
+//   },
+//   {
+//     color: "card-color_mint",
+//     colorSave: "card-color_green",
+//     name: "Boat Rockerz 323",
+//     review: 50,
+//     price: 20,
+//     save: 60,
+//     image: "./img/Top_Picks_3.png",
+//   },
+// ];
+// const cardSell_2 = [
+//   {
+//     color: "card-color_purpure",
+//     colorSave: "",
+//     name: "Boat Rockerz 333",
+//     review: 75,
+//     price: 20,
+//     save: 0,
+//     image: "./img/Top_Picks_1.png",
+//   },
+//   {
+//     color: "card-color_purpure",
+//     colorSave: "",
+//     name: "Boat kerz 234",
+//     review: 80,
+//     price: 50,
+//     save: 0,
+//     image: "./img/Top_Picks_2.png",
+//   },
+//   {
+//     color: "card-color_purpure",
+//     colorSave: "card-color_blu",
+//     name: "Boat Rockerz 323",
+//     review: 50,
+//     price: 20,
+//     save: 60,
+//     image: "./img/Top_Picks_3.png",
+//   },
+//   {
+//     color: "card-color_purpure",
+//     colorSave: "",
+//     name: "Boat Rockerz 333",
+//     review: 75,
+//     price: 20,
+//     save: 0,
+//     image: "./img/Top_Picks_1.png",
+//   },
+//   {
+//     color: "card-color_purpure",
+//     colorSave: "",
+//     name: "Boat kerz 234",
+//     review: 80,
+//     price: 50,
+//     save: 0,
+//     image: "./img/Top_Picks_2.png",
+//   },
+//   {
+//     color: "card-color_purpure",
+//     colorSave: "card-color_blu",
+//     name: "Boat Rockerz 323",
+//     review: 50,
+//     price: 20,
+//     save: 60,
+//     image: "./img/Top_Picks_3.png",
+//   },
+// ];
 
 const cardTrend_1 = [
   {
@@ -296,37 +297,37 @@ const cardTrend_3 = [
   },
 ];
 
-export function gidrationTemplate_2(array, wrapperString) {
-  let cardsArray = [];
+// export function gidrationTemplate_2(array, wrapperString) {
+//   let cardsArray = [];
 
-  array.forEach((item) => {
-    cardsArray.push(creatCardSell(item)); //гидрация
-  });
+//   array.forEach((item) => {
+//     cardsArray.push(creatCardSell(item)); //гидрация
+//   });
 
-  const cardsWrapper = document.querySelector(wrapperString);
-  cardsWrapper.innerHTML = "";
+//   const cardsWrapper = document.querySelector(wrapperString);
+//   cardsWrapper.innerHTML = "";
 
-  cardsArray.forEach((item) => {
-    cardsWrapper.appendChild(item);
-  });
-}
+//   cardsArray.forEach((item) => {
+//     cardsWrapper.appendChild(item);
+//   });
+// }
 
-export function switchTabButton_2() { // сделать 1 уни функцию
-  const sellersMenu = document.querySelector(".sellers-menu");
-  sellersMenu.addEventListener("click", (event) => {
-    sellersMenu.querySelectorAll("button").forEach((item) => {
-      item.classList.remove("menu__tab_button_active");
-    });
+// export function switchTabButton_2() { // сделать 1 уни функцию
+//   const sellersMenu = document.querySelector(".sellers-menu");
+//   sellersMenu.addEventListener("click", (event) => {
+//     sellersMenu.querySelectorAll("button").forEach((item) => {
+//       item.classList.remove("menu__tab_button_active");
+//     });
 
-    if (event.target.innerText == "Top Picks") {
-      gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
-      event.target.classList.add("menu__tab_button_active");
-    } else {
-      gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
-      event.target.classList.add("menu__tab_button_active");
-    }
-  });
-} 
+//     if (event.target.innerText == "Top Picks") {
+//       gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
+//       event.target.classList.add("menu__tab_button_active");
+//     } else {
+//       gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
+//       event.target.classList.add("menu__tab_button_active");
+//     }
+//   });
+// } 
 
 export function gidrationTemplate_3(array, wrapperString) {
   let cardsArray = [];
@@ -375,8 +376,8 @@ bodyWrapper.appendChild(createTrendingEarphones())
 bodyWrapper.appendChild(createNewLaunches())
 bodyWrapper.appendChild(createFooter())
 
-gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
-switchTabButton_2();
+// gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
+// switchTabButton_2();
 gidrationTemplate_3(cardTrend_3, ".trending-earphones__product-wrapper");
 switchTabButton_3();
 

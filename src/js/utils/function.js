@@ -1,34 +1,38 @@
-// export function gidrationTemplate_2(array, wrapperString) {
-//   let cardsArray = [];
+import { creatCardSell } from "../components/card";
 
-//   array.forEach((item) => {
-//     cardsArray.push(creatCardSell(item)); //гидрация
-//   });
+export function gidrationTemplate_2(array, wrapperString) {
+  let cardsArray = [];
 
-//   const cardsWrapper = document.querySelector(wrapperString);
-//   cardsWrapper.innerHTML = "";
+  array.forEach((item) => {
+    cardsArray.push(creatCardSell(item)); //гидрация
+  });
 
-//   cardsArray.forEach((item) => {
-//     cardsWrapper.appendChild(item);
-//   });
-// }
+  const cardsWrapper = document.createElement("div");
+  cardsWrapper.classList.add(wrapperString);
 
-// export function switchTabButton_2() { // сделать 1 уни функцию
-//   const sellersMenu = document.querySelector(".sellers-menu");
-//   sellersMenu.addEventListener("click", (event) => {
-//     sellersMenu.querySelectorAll("button").forEach((item) => {
-//       item.classList.remove("menu__tab_button_active");
-//     });
+  cardsArray.forEach((item) => {
+    cardsWrapper.appendChild(item);
+  });
 
-//     if (event.target.innerText == "Top Picks") {
-//       gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
-//       event.target.classList.add("menu__tab_button_active");
-//     } else {
-//       gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
-//       event.target.classList.add("menu__tab_button_active");
-//     }
-//   });
-// }
+  return cardsWrapper;
+}
+
+export function switchTabButton_2() { // сделать 1 уни функцию
+  const sellersMenu = document.querySelector(".sellers-menu");
+  sellersMenu.addEventListener("click", (event) => {
+    sellersMenu.querySelectorAll("button").forEach((item) => {
+      item.classList.remove("menu__tab_button_active");
+    });
+
+    if (event.target.innerText == "Top Picks") {
+      gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
+      event.target.classList.add("menu__tab_button_active");
+    } else {
+      gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
+      event.target.classList.add("menu__tab_button_active");
+    }
+  });
+}
 
 // export function gidrationTemplate_3(array, wrapperString) {
 //   let cardsArray = [];
