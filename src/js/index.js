@@ -15,7 +15,7 @@ import "../css/index.css"; //так работают только стили
 // import { creatCardSell } from "./components/card.js";
 import { creatCardTrend } from "./components/card.js";
 
-// const cardSell_1 = [
+// const topPicksArray = [
 //   {
 //     color: "card-color_mint",
 //     colorSave: "",
@@ -71,7 +71,7 @@ import { creatCardTrend } from "./components/card.js";
 //     image: "./img/Top_Picks_3.png",
 //   },
 // ];
-// const cardSell_2 = [
+// const watchesArray = [
 //   {
 //     color: "card-color_purpure",
 //     colorSave: "",
@@ -297,38 +297,6 @@ const cardTrend_3 = [
   },
 ];
 
-// export function gidrationTemplate_2(array, wrapperString) {
-//   let cardsArray = [];
-
-//   array.forEach((item) => {
-//     cardsArray.push(creatCardSell(item)); //гидрация
-//   });
-
-//   const cardsWrapper = document.querySelector(wrapperString);
-//   cardsWrapper.innerHTML = "";
-
-//   cardsArray.forEach((item) => {
-//     cardsWrapper.appendChild(item);
-//   });
-// }
-
-// export function switchTabButton_2() { // сделать 1 уни функцию
-//   const sellersMenu = document.querySelector(".sellers-menu");
-//   sellersMenu.addEventListener("click", (event) => {
-//     sellersMenu.querySelectorAll("button").forEach((item) => {
-//       item.classList.remove("menu__tab_button_active");
-//     });
-
-//     if (event.target.innerText == "Top Picks") {
-//       gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
-//       event.target.classList.add("menu__tab_button_active");
-//     } else {
-//       gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
-//       event.target.classList.add("menu__tab_button_active");
-//     }
-//   });
-// } 
-
 export function gidrationTemplate_3(array, wrapperString) {
   let cardsArray = [];
 
@@ -376,7 +344,7 @@ bodyWrapper.appendChild(createTrendingEarphones())
 bodyWrapper.appendChild(createNewLaunches())
 bodyWrapper.appendChild(createFooter())
 
-// gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
+// gidrationTemplate_2(watchesArray, ".sellers-product-wrapper");
 // switchTabButton_2();
 gidrationTemplate_3(cardTrend_3, ".trending-earphones__product-wrapper");
 switchTabButton_3();
@@ -387,3 +355,9 @@ switchTabButton_3();
 // вызов функции и передача элемента в функцию / как работает функция 
 // дебаг 
 // ожидание - вызов - ГДЕ вызов - есть ли вызов - родитель - функции родителя
+
+
+
+
+// механика функции
+// механика работы с массивами - прочитай и повтори (матчать)

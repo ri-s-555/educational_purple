@@ -1,6 +1,6 @@
 import { creatCardSell } from "../components/card";
 
-export function gidrationTemplate_2(array, wrapperString) {
+export function gidrationTemplate(array, wrapperString) {
   let cardsArray = [];
 
   array.forEach((item) => {
@@ -17,57 +17,37 @@ export function gidrationTemplate_2(array, wrapperString) {
   return cardsWrapper;
 }
 
-export function switchTabButton_2() { // сделать 1 уни функцию
-  const sellersMenu = document.querySelector(".sellers-menu");
+export function switchTabButton_2(
+  dataArray,
+  titleArray,
+  blockSection,
+  wrapperString
+) {
+  const sellersMenu = blockSection.querySelector(".sellers-menu"); // сделай как тут let wrapper = blockSection.querySelector(`.${wrapperString}`);
   sellersMenu.addEventListener("click", (event) => {
     sellersMenu.querySelectorAll("button").forEach((item) => {
       item.classList.remove("menu__tab_button_active");
     });
 
-    if (event.target.innerText == "Top Picks") {
-      gidrationTemplate_2(cardSell_1, ".sellers-product-wrapper");
-      event.target.classList.add("menu__tab_button_active");
-    } else {
-      gidrationTemplate_2(cardSell_2, ".sellers-product-wrapper");
-      event.target.classList.add("menu__tab_button_active");
+    // найти cardsWrapper и очистить его, постле приминить gidrationTemplate
+    let wrapper = blockSection.querySelector(`.${wrapperString}`);
+    if (wrapper) {
+      wrapper.remove(); // Удаляет и сам элемент wrapper со страницы
     }
+
+
+    titleArray.forEach((title, index) => {
+
+      if (event.target.innerText == title) {
+        blockSection.appendChild(
+          gidrationTemplate(dataArray[index], wrapperString)
+        );
+        event.target.classList.add("menu__tab_button_active");
+      }
+    });
   });
 }
 
-// export function gidrationTemplate_3(array, wrapperString) {
-//   let cardsArray = [];
-
-//   array.forEach((item) => {
-//     cardsArray.push(creatCardTrend(item)); //гидрация
-//   });
-
-//   const cardsWrapper = document.querySelector(wrapperString);
-//   cardsWrapper.innerHTML = "";
-
-//   cardsArray.forEach((item) => {
-//     cardsWrapper.appendChild(item);
-//   });
-// }
-
-// export function switchTabButton_3() {
-//   const trendMenu = document.querySelector(".trending-earphones__menu");
-//   trendMenu.addEventListener("click", (event) => {
-//     trendMenu.querySelectorAll("button").forEach((item) => {
-//       item.classList.remove("menu__tab_button_active");
-//     });
-
-//     if (event.target.innerText == "Earbuds") {
-//       gidrationTemplate_3(cardTrend_1, ".trending-earphones__product-wrapper");
-//       event.target.classList.add("menu__tab_button_active");
-//     } else if (event.target.innerText == "Wireless") {
-//       gidrationTemplate_3(cardTrend_2, ".trending-earphones__product-wrapper");
-//       event.target.classList.add("menu__tab_button_active");
-//     } else {
-//       gidrationTemplate_3(cardTrend_3, ".trending-earphones__product-wrapper");
-//       event.target.classList.add("menu__tab_button_active");
-//     }
-//   });
-// }
 
 // идея по поводу оптимизации ревью
 // ${getStarRating(review)} вместо свг

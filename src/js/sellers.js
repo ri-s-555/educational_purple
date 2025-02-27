@@ -1,9 +1,9 @@
-import { gidrationTemplate_2, switchTabButton_2 } from "./utils/function.js";
+import { gidrationTemplate, switchTabButton_2 } from "./utils/function.js";
 
 import { createMenuSell } from "./components/menu.js";
 // import { creatCardSell } from "./components/card.js";
 
-const cardSell_1 = [
+const topPicksArray = [
   {
     color: "card-color_mint",
     colorSave: "",
@@ -59,7 +59,7 @@ const cardSell_1 = [
     image: "./img/Top_Picks_3.png",
   },
 ];
-const cardSell_2 = [
+const watchesArray = [
   {
     color: "card-color_purpure",
     colorSave: "",
@@ -128,29 +128,10 @@ export default function createSellers() {
 
   elem.querySelector(".sellers-menu-wrapper").appendChild(menu);
 
-  elem.appendChild(gidrationTemplate_2(cardSell_2, "sellers-product-wrapper"));
-  // switchTabButton_2();
+  elem.appendChild(gidrationTemplate(watchesArray, "sellers-product-wrapper"));
+  switchTabButton_2([topPicksArray, watchesArray,], ["Top Picks", "Watches"], elem, "sellers-product-wrapper");
 
   return elem;
 }
 
-//  идеи использования уни ф меню
-// import createMenu from "./components/menu.js";
 
-// export default function createSellers() {
-//   const menu = createMenu(["Top Picks", "Watches"]);
-
-//   const elem = document.createElement("div");
-//   elem.classList.add("container", "sellers");
-//   elem.innerHTML = `
-//         <div class="sellers-header">Top Sellers</div>
-//         <div class="sellers-menu-wrapper"></div>
-//         <div class="sellers-product-wrapper"></div>
-//         `;
-
-//   elem.querySelector(".sellers-menu-wrapper").appendChild(menu);
-
-//   return elem;
-// }
-
-// массив карточек из индекса
