@@ -1,4 +1,3 @@
-
 export function creatCardSell ({color, colorSave, name, review, price, save, image}) {
 
     const elem = document.createElement ("div")
@@ -113,22 +112,126 @@ export function creatCardTrend ({color, colorSave, name, review, price, save}) {
     `
     return elem
 }
-// ${getStarRating(review)} вместо свг
 
-// function getStarRating(review) {
-//     const filledStar = `
-//       <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
-//            xmlns="http://www.w3.org/2000/svg">
-//         <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
-//               fill="#C00C00" />
-//       </svg>`;
-  
-//     const emptyStar = `
-//       <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
-//            xmlns="http://www.w3.org/2000/svg">
-//         <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
-//               stroke="#C00C00" fill="none"/>
-//       </svg>`;
-  
-//     return filledStar.repeat(review) + emptyStar.repeat(5 - review);
-//   }
+
+
+// export function creatCardSell ({color, colorSave, name, review, price, save, image}) {
+
+//     const elem = document.createElement ("div")
+//     elem.innerHTML = `
+//                 <div class="product__card">
+//                 <div class="product__card__pick ${color}">
+//                     <div class="product__card__pick__img">
+//                         <img class="product__card__pick__img__product"
+//                             src="./img/Trending Earphones_1.png" alt="${name}">
+//                         <div class="product__card__pick__img__save ${colorSave}">Save
+//                             <br>$ ${save}
+//                         </div>
+//                     </div>
+//                     <div class="product__card__pick__descr">
+//                         <div class="product__card__pick__descr__name">${name}</div>
+//                         <div class="product__card__pick__descr__reviews">
+//                             <div class="product__card__pick__descr__reviews__svg">
+//                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+//                                     xmlns="http://www.w3.org/2000/svg">
+//                                     <path
+//                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+//                                         fill="#C00C00" />
+//                                 </svg>
+//                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+//                                     xmlns="http://www.w3.org/2000/svg">
+//                                     <path
+//                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+//                                         fill="#C00C00" />
+//                                 </svg>
+//                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+//                                     xmlns="http://www.w3.org/2000/svg">
+//                                     <path
+//                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+//                                         fill="#C00C00" />
+//                                 </svg>
+//                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+//                                     xmlns="http://www.w3.org/2000/svg">
+//                                     <path
+//                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+//                                         fill="#C00C00" />
+//                                 </svg>
+//                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+//                                     xmlns="http://www.w3.org/2000/svg">
+//                                     <path
+//                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+//                                         fill="#C00C00" />
+//                                 </svg>
+//                             </div>
+//                             <div class="product__card__pick__descr__reviews__text">${review} Reviews</div>
+//                         </div>
+//                         <div class="product__card__pick__descr__price">$ ${price}</div>
+//                     </div>
+//                 </div>
+//                 <button class="product__card__button">Add to cart</button>
+//             </div>
+//     `
+//     return elem
+// }
+
+// export function creatCardTrend ({color, colorSave, name, review, price, save}) {
+//     const elem = document.createElement ("div")
+//     elem.innerHTML = `
+//                 <div class="product__card">
+//                 <div class="product__card__pick ${color}">
+//                     <div class="product__card__pick__img">
+//                         <img class="product__card__pick__img__product"
+//                             src="./img/Trending Earphones_1.png" alt="${name}">
+//                         <div class="product__card__pick__img__save ${colorSave}">Save
+//                             <br>$ ${save}
+//                         </div>
+//                     </div>
+//                     <div class="product__card__pick__descr">
+//                         <div class="product__card__pick__descr__name">${name}</div>
+//                         <div class="product__card__pick__descr__reviews">
+//                             <div class="product__card__pick__descr__reviews__svg">
+//                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+//                                     xmlns="http://www.w3.org/2000/svg">
+//                                     <path
+//                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+//                                         fill="#C00C00" />
+//                                 </svg>
+//                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+//                                     xmlns="http://www.w3.org/2000/svg">
+//                                     <path
+//                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+//                                         fill="#C00C00" />
+//                                 </svg>
+//                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+//                                     xmlns="http://www.w3.org/2000/svg">
+//                                     <path
+//                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+//                                         fill="#C00C00" />
+//                                 </svg>
+//                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+//                                     xmlns="http://www.w3.org/2000/svg">
+//                                     <path
+//                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+//                                         fill="#C00C00" />
+//                                 </svg>
+//                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+//                                     xmlns="http://www.w3.org/2000/svg">
+//                                     <path
+//                                         d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
+//                                         fill="#C00C00" />
+//                                 </svg>
+//                             </div>
+//                             <div class="product__card__pick__descr__reviews__text">${review} Reviews</div>
+//                         </div>
+//                         <div class="product__card__pick__descr__price">$ ${price}</div>
+//                     </div>
+//                 </div>
+//                 <button class="product__card__button">Add to cart</button>
+//             </div>
+//     `
+//     return elem
+// }
+
+
+
+

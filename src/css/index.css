@@ -18,4 +18,8 @@
 @import "./trending_earphones.css";
 @import "./new_launches.css";
 @import "./footer.css";
-@import "./color_card.css";
+@import "./components/color_card.css";
+@import "./components/button.css";
+@import "./components/menu.css";
+/* @import "./components/card_1.css"; */
+/* @import "./components/card_2.css"; */
