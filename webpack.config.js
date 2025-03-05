@@ -47,7 +47,14 @@ module.exports = (env, argv) => {
             }
           ],
         },
-        
+        {
+          test: /\.scss$/, // Обработка SCSS файлов
+          use: [
+            'style-loader',
+            'css-loader',
+            'sass-loader' // Добавляем sass-loader для работы с SCSS
+          ],
+        },
         // Добавьте другие правила загрузчиков по мере необходимости
       ],
     },
