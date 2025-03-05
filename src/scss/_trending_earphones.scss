@@ -1,14 +1,15 @@
-.sellers {
-  background: #fff;
 
+@use "./colors" as *;
+.trending-earphones {
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-.sellers-header {
-  width: 244px;
+.trending-earphones__header {
+  width: 465px;
   height: 54px;
 
   font-size: 44px;
@@ -17,11 +18,11 @@
   text-align: left;
   color: rgba(43, 38, 38, 1);
 
-  margin-top: 40px;
-  margin-bottom: 35px;
+  margin-top: 70px;
+  margin-bottom: 55px;
 }
 
-.sellers-product-wrapper {
+.trending-earphones__product-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,12 +30,11 @@
   margin-top: 50px;
 }
 
-.sellers-product__card {
+.trending-earphones__product__card {
   display: flex;
   flex-direction: column;
 }
-
-.sellers-product__card-pick {
+.trending-earphones__product__card__pick {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,13 +44,15 @@
   border-radius: 25px;
 }
 
-.sellers-product__card-pick_img-product {
+.trending-earphones__product__card__pick__img {
+  position: relative;
+}
+.trending-earphones__product__card__pick__img__product {
   width: 196px;
   height: 196px;
   margin-top: 30px;
 }
-
-.sellers-product__card-pick_img-save {
+.trending-earphones__product__card__pick__img__save {
   font-size: 18px;
   font-weight: 600;
   line-height: 21.94px;
@@ -63,22 +65,22 @@
   border-radius: 50px;
 
   position: absolute;
-  top: -220px;
+  top: 20px;
   left: 160px;
 }
-
-.sellers-product__card-pick_descr {
+.trending-earphones__product__card__pick__descr {
   display: flex;
   flex-direction: column;
 
   width: 319px;
   height: 164px;
+
   border-radius: 25px;
+
   background: rgba(255, 255, 255, 1);
   padding: 31px 76px 30px 52px;
 }
-
-.sellers-product__card-pick_descr__name {
+.trending-earphones__product__card__pick__descr__name {
   font-size: 21px;
   font-weight: 500;
   line-height: 35px;
@@ -86,19 +88,16 @@
 
   color: rgba(43, 38, 38, 1);
 }
-
-.sellers-product__card-pick_descr__reviews {
+.trending-earphones__product__card__pick__descr__reviews {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-top: 5px;
 }
-
-.sellers-product__card-pick_descr__reviews-svg {
+.trending-earphones__product__card__pick__descr__reviews__svg {
   display: flex;
 }
-
-.sellers-product__card-pick_descr__reviews-text {
+.trending-earphones__product__card__pick__descr__reviews__text {
   font-size: 11px;
   font-weight: 500;
   line-height: 35px;
@@ -106,8 +105,7 @@
 
   color: rgba(136, 136, 136, 1);
 }
-
-.sellers-product__card-pick_descr__price {
+.trending-earphones__product__card__pick__descr__price {
   font-size: 21px;
   font-weight: 600;
   line-height: 25.6px;
@@ -115,13 +113,11 @@
 
   color: rgba(43, 38, 38, 1);
 }
-
-.sellers-product__card-button {
+.trending-earphones__product__card__button {
   width: 361px;
   height: 70px;
   border-radius: 10px;
-
-  background: var( --primary-color);
+  background: $primary-color;
 
   font-size: 21px;
   font-weight: 600;
@@ -132,7 +128,6 @@
   margin-top: 29px;
   border-color: rgba(0, 0, 0, 0);
 }
-
-.sellers-product__next {
+.trending-earphones__product__next {
   padding-top: 180px;
 }

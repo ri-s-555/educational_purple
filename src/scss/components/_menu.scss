@@ -1,3 +1,4 @@
+@use "../colors" as *;
 .sellers-menu ul {
   display: flex;
   justify-content: space-evenly;
@@ -33,6 +34,6 @@
 
 .menu__tab_button_active {
   border-color: transparent;
-  background: var( --primary-color);
+  background: $primary-color;
   color: rgba(255, 255, 255, 1);
 }
