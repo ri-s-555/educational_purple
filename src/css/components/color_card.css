@@ -8,7 +8,7 @@
   background: rgba(229, 213, 255, 1);
 }
 .card-color_green {
-  background: rgba(16, 185, 129, 1);
+  background: var( --primary-color);
 }
 .card-color_blu-3 {
   background: rgba(224, 239, 255, 1);

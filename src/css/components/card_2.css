@@ -85,7 +85,7 @@
   width: 361px;
   height: 70px;
   border-radius: 10px;
-  background: rgba(16, 185, 129, 1);
+  background: var( --primary-color);
 
   font-size: 21px;
   font-weight: 600;

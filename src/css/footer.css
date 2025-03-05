@@ -27,7 +27,7 @@
 .footer__start__button {
   width: 175px;
   height: 50px;
-  background: rgba(16, 185, 129, 1);
+  background: var( --primary-color);
   border: rgba(0, 0, 0, 0);
 
   font-family: "DM Sans";
@@ -106,7 +106,7 @@
   line-height: 22.13px;
   letter-spacing: -0.23181818425655365px;
   text-align: left;
-  color: rgba(16, 185, 129, 1);
+  color: var( --primary-color);
 
   margin-bottom: 20px;
 }

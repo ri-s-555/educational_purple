@@ -33,6 +33,6 @@
 
 .menu__tab_button_active {
   border-color: transparent;
-  background: rgba(16, 185, 129, 1);
+  background: var( --primary-color);
   color: rgba(255, 255, 255, 1);
 }

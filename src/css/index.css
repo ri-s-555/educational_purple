@@ -1,17 +1,16 @@
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-  }
-  .container {
-    width: 1440px;
-    margin: 0 auto;
-    /* background: #fff; */
-    margin-bottom: 40px;
-  }
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  /* background: #fff; */
+  margin-bottom: 40px;
+}
+@import "./colors.css";
 @import "./head.css";
 @import "./featured_products.css";
 @import "./sellers.css";
