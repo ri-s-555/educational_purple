@@ -1,3 +1,4 @@
+// head
 document.addEventListener('DOMContentLoaded', function() {
     searchTabButton();
 });
@@ -45,6 +46,7 @@ function searchTabButton() {
     searchButton.addEventListener("click", handleSearchButtonClick);
 }
 
+// featured-products
 // универсальная функция для любой кнопки, посмотреть что можно сделать с классами
 document.addEventListener('DOMContentLoaded', function() {
     const searchButton = document.querySelector('.featured-products-descr_button-add');

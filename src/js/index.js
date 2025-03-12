@@ -1,4 +1,6 @@
 import createHead from "./head.js";
+// import createHead from "./1_head.js";
+// import createHead from "./2_home_page.js";
 import createFeaturedProducts from "./featured_products.js";
 import createSellers from "./sellers.js";
 import createTrendingEarphones from "./trending_earphones.js";
@@ -9,9 +11,10 @@ import '../scss/index.scss'
 
 
 const bodyWrapper = document.querySelector("body");
-// bodyWrapper.appendChild(createHead ());
+bodyWrapper.appendChild(createHead ());
+// bodyWrapper.appendChild(createHomePage ());
 // bodyWrapper.appendChild(createFeaturedProducts())
 // bodyWrapper.appendChild(createSellers())
 // bodyWrapper.appendChild(createTrendingEarphones())
 // bodyWrapper.appendChild(createNewLaunches())
-bodyWrapper.appendChild(createFooter())
+// bodyWrapper.appendChild(createFooter())
