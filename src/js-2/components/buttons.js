@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function searchTabButton() {
-    const searchButton = document.querySelector(".search-button");
-    const searchInput = document.querySelector(".search-input");
+    const searchButton = document.querySelector(".header__buttons__search__button");
+    const searchInput = document.querySelector(".header__buttons__search__input");
     const items = document.querySelectorAll(".item");
 
     function clearActiveButtonClass() {
-        document.querySelectorAll(".search-button").forEach((button) => {
+        document.querySelectorAll(".header__buttons__search__button").forEach((button) => {
             button.classList.remove("search__tab_button_active");
         });
     }
@@ -45,25 +45,3 @@ function searchTabButton() {
 
     searchButton.addEventListener("click", handleSearchButtonClick);
 }
-
-// featured-products
-// универсальная функция для любой кнопки, посмотреть что можно сделать с классами
-document.addEventListener('DOMContentLoaded', function() {
-    const searchButton = document.querySelector('.featured-products-descr_button-add');
-
-    searchButton.addEventListener('click', function() {
-        searchButton.classList.add('tab_button_active_show');
-
-        setTimeout(function() {
-            searchButton.classList.remove('tab_button_active_show');
-        }, 5000); // 5000 мс / 5 сек
-    });
-});
-
-
-
-
-
-
-
-

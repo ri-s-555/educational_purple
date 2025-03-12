@@ -17,22 +17,28 @@ export function gidrationTemplate(array, wrapperString) {
   return cardsWrapper;
 }
 
-export function switchTabButton(dataArray, titleArray, blockSection, wrapperString, menuClass) {
-  const menu = blockSection.querySelector(`.${menuClass}`);
-
-  menu.addEventListener("click", (event) => {
-    menu.querySelectorAll("button").forEach((item) => {
+export function switchTabButton(
+  dataArray,
+  titleArray,
+  blockSection,
+  wrapperString
+) {
+  const sellersMenu = blockSection.querySelector(".sellers-menu"); // сделай как тут let wrapper = blockSection.querySelector(`.${wrapperString}`);
+  sellersMenu.addEventListener("click", (event) => {
+    sellersMenu.querySelectorAll("button").forEach((item) => {
       item.classList.remove("menu__tab_button_active");
     });
 
-    // Найти cardsWrapper и очистить его, затем применить gidrationTemplate
+    // найти cardsWrapper и очистить его, постле применить gidrationTemplate
     let wrapper = blockSection.querySelector(`.${wrapperString}`);
     if (wrapper) {
       wrapper.remove(); // Удаляет и сам элемент wrapper со страницы
     }
 
+
     titleArray.forEach((title, index) => {
-      if (event.target.innerText === title) {
+
+      if (event.target.innerText == title) {
         blockSection.appendChild(
           gidrationTemplate(dataArray[index], wrapperString)
         );
@@ -41,7 +47,6 @@ export function switchTabButton(dataArray, titleArray, blockSection, wrapperStri
     });
   });
 }
-
 
 
 // идея по поводу оптимизации ревью

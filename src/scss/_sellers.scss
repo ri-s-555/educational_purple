@@ -7,132 +7,104 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-
-.sellers-header {
-  width: 244px;
-  height: 54px;
-
-  font-size: 44px;
-  font-weight: 600;
-  line-height: 53.64px;
-  text-align: left;
-  color: rgba(43, 38, 38, 1);
-
-  margin-top: 40px;
-  margin-bottom: 35px;
-}
-
-.sellers-product-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 85px;
-  margin-top: 50px;
+  &-header {
+    width: 244px;
+    height: 54px;
+  
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 53.64px;
+    text-align: left;
+    color: rgba(43, 38, 38, 1);
+  
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+  &-product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 85px;
+    margin-top: 50px;
+  }
 }
 
 .sellers-product__card {
   display: flex;
   flex-direction: column;
-}
-
-.sellers-product__card-pick {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 361px;
-  height: 438px;
-  border-radius: 25px;
-}
-
-.sellers-product__card-pick_img-product {
-  width: 196px;
-  height: 196px;
-  margin-top: 30px;
-}
-
-.sellers-product__card-pick_img-save {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.94px;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-
-  width: 100px;
-  height: 100px;
-  padding-top: 25px;
-  border-radius: 50px;
-
-  position: absolute;
-  top: -220px;
-  left: 160px;
-}
-
-.sellers-product__card-pick_descr {
-  display: flex;
-  flex-direction: column;
-
-  width: 319px;
-  height: 164px;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 1);
-  padding: 31px 76px 30px 52px;
-}
-
-.sellers-product__card-pick_descr__name {
-  font-size: 21px;
-  font-weight: 500;
-  line-height: 35px;
-  text-align: left;
-
-  color: rgba(43, 38, 38, 1);
-}
-
-.sellers-product__card-pick_descr__reviews {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-top: 5px;
-}
-
-.sellers-product__card-pick_descr__reviews-svg {
-  display: flex;
-}
-
-.sellers-product__card-pick_descr__reviews-text {
-  font-size: 11px;
-  font-weight: 500;
-  line-height: 35px;
-  text-align: left;
-
-  color: rgba(136, 136, 136, 1);
-}
-
-.sellers-product__card-pick_descr__price {
-  font-size: 21px;
-  font-weight: 600;
-  line-height: 25.6px;
-  text-align: left;
-
-  color: rgba(43, 38, 38, 1);
-}
-
-.sellers-product__card-button {
-  width: 361px;
-  height: 70px;
-  border-radius: 10px;
-
-  background: $primary-color;
-
-  font-size: 21px;
-  font-weight: 600;
-  line-height: 25.6px;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-
-  margin-top: 29px;
-  border-color: rgba(0, 0, 0, 0);
+  &-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    width: 361px;
+    height: 438px;
+    border-radius: 25px;
+    &_img-product {
+      width: 196px;
+      height: 196px;
+      margin-top: 30px;
+    }
+    &_img-save {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 21.94px;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+    
+      width: 100px;
+      height: 100px;
+      padding-top: 25px;
+      border-radius: 50px;
+    
+      position: absolute;
+      top: 20px;
+      left: 160px;
+    }
+    &_descr {
+      display: flex;
+      flex-direction: column;
+    
+      width: 319px;
+      height: 164px;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 1);
+      padding: 31px 76px 30px 52px;
+      &__name {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 35px;
+        text-align: left;
+      
+        color: rgba(43, 38, 38, 1);
+      }
+      &__reviews {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 5px;
+        &-svg {
+          display: flex;
+        }
+        &-text {
+          font-size: 11px;
+          font-weight: 500;
+          line-height: 35px;
+          text-align: left;
+        
+          color: rgba(136, 136, 136, 1);
+        }
+      }
+      &__price {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 25.6px;
+        text-align: left;
+      
+        color: rgba(43, 38, 38, 1);
+      }
+    }
+  }
 }
 
 .sellers-product__next {
