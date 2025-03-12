@@ -17,7 +17,7 @@ export function gidrationTemplate(array, wrapperString) {
   return cardsWrapper;
 }
 
-export function switchTabButton_2(
+export function switchTabButton(
   dataArray,
   titleArray,
   blockSection,

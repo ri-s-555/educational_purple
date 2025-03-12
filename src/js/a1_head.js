@@ -1,8 +1,7 @@
-export default function createHead () {
-
-    const elemHead = document.createElement ("div")
-    elemHead.classList.add("container", "head");
-    elemHead.innerHTML =`
+export default function createHead() {
+  const elemHead = document.createElement("div");
+  elemHead.classList.add("container", "head");
+  elemHead.innerHTML = `
      <div class="container head">
         <div class="head__logo"> <span> Shop</span>per</div>
         <div class="head__buttons">
@@ -42,6 +41,6 @@ export default function createHead () {
             </div>
         </div>
 </div>
-    `
-    return elemHead
+    `;
+  return elemHead;
 }
