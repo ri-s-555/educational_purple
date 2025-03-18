@@ -1,5 +1,5 @@
 import { gidrationTemplate, switchTabButton } from "./utils/function.js";
-import { createMenuTrend } from "./components/menu.js";
+import { createMenu } from "./components/menu.js";
 
 
 
@@ -173,9 +173,7 @@ const wiredArray = [
 ]
 
 export default function createTrendingEarphones() {
-  const menu = createMenuTrend(["Earbuds", "Wireless", "Wired"]);
-  // const menuTrend = createMenu(["Earbuds", "Wireless", "Wired"], "trending-earphones__menu");
-
+  const menu = createMenu(["Earbuds", "Wireless", "Wired"], "trending-earphones__menu");
 
   const elem = document.createElement("div");
   elem.classList.add("container", "trending-earphones");
@@ -187,9 +185,7 @@ export default function createTrendingEarphones() {
   elem.querySelector(".trending-earphones__menu-wrapper").appendChild(menu);
 
   elem.appendChild(gidrationTemplate(wirelessArray, "trending-earphones__product-wrapper"));
-
   switchTabButton( [earbudsArray, wirelessArray, wiredArray], ["Earbuds", "Wireless", "Wired"], elem, "trending-earphones__product-wrapper", "trending-earphones__menu");
   
-
   return elem;
 }

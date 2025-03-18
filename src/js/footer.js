@@ -11,11 +11,11 @@ export default function createFooter () {
             <div class="footer__nav__subscribe">
                 <h1 class="footer__nav__subscribe__text">Subscribe to our <br>Website</h1>
                 <div class="footer__nav__subscribe__imput">
-                    <input class="footer__nav__subscribe__imput__email" type="text" placeholder="Email address">
+                    <input class="footer__nav__subscribe__imput__email" type="email" placeholder="Email address">
                     <button class="footer__nav__subscribe__imput__button">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 8C0 3.58172 3.58172 0 8 0H42C46.4183 0 50 3.58172 50 8V50H0V8Z"
-                                fill="#10B981" />
+                                fill="var(--primary-color)" />
                             <path
                                 d="M22.1542 29.1333L25.975 25.3125L22.1542 21.4917L23.3333 20.3125L28.3333 25.3125L23.3333 30.3125L22.1542 29.1333Z"
                                 fill="white" />

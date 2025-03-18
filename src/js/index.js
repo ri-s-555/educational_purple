@@ -6,6 +6,7 @@ import createSellers from "./sellers.js";
 import createTrendingEarphones from "./trending_earphones.js";
 import createNewLaunches from "./new_launches.js";
 import createFooter from "./footer.js";
+import { createModal } from "./components/modal.js";
 
 import '../scss/index.scss'
 
@@ -20,5 +21,16 @@ bodyWrapper.appendChild(createNewLaunches())
 bodyWrapper.appendChild(createFooter())
 
 
+const loginButton = document.querySelector('.login-button');
+loginButton.addEventListener('click', function (event) {
+    const modalWithLoginContent = createModal('login');
+    bodyWrapper.appendChild(modalWithLoginContent);
+});
 
-//не меняются классы / меняются, но изменения не отображаются в браузере
+const addToCartButtons = document.querySelectorAll('.button-add-to-card');
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', function (event) {
+        const modalWithCartContent = createModal('addToCart');
+        bodyWrapper.appendChild(modalWithCartContent);
+    });
+});

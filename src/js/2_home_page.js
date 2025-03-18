@@ -48,11 +48,11 @@ export default function createcreateHomePage () {
                             d="M26.5 0L33.6574 19.3426L53 26.5L33.6574 33.6574L26.5 53L19.3426 33.6574L0 26.5L19.3426 19.3426L26.5 0Z"
                             fill="#FFD600" />
                     </svg>
-                    <svg class="latest-product__img-proguct-background" width="272" height="477" viewBox="0 0 272 477"
+                    <svg class="latest-product__img-product-background" width="272" height="477" viewBox="0 0 272 477"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="272" height="477" rx="136" fill="#ECFEF4" />
                     </svg>
-                    <img class="latest-product__img-proguct-product" src="./img/product_Red Beats Ml9c2zm:a.png"
+                    <img class="latest-product__img-product-product" src="./img/product_Red Beats Ml9c2zm:a.png"
                         width="270" height="299" alt="Red Beats Ml9c2zm/a">
                     <svg class="star_right" width="53" height="53" viewBox="0 0 53 53" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
