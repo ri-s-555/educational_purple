@@ -43,24 +43,3 @@ export function switchTabButton(dataArray, titleArray, blockSection, wrapperStri
 }
 
 
-
-// идея по поводу оптимизации ревью
-// ${getStarRating(review)} вместо свг
-
-// function getStarRating(review) {
-//     const filledStar = `
-//       <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
-//            xmlns="http://www.w3.org/2000/svg">
-//         <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
-//               fill="#C00C00" />
-//       </svg>`;
-
-//     const emptyStar = `
-//       <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
-//            xmlns="http://www.w3.org/2000/svg">
-//         <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z"
-//               stroke="#C00C00" fill="none"/>
-//       </svg>`;
-
-//     return filledStar.repeat(review) + emptyStar.repeat(5 - review);
-//   }

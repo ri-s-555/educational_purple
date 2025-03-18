@@ -49,7 +49,7 @@ export function creatCardSell ({color, colorSave, name, review, price, save, ima
                         <div class="sellers-product__card-pick_descr__price">$ ${price}</div>
                     </div>
                 </div>
-                <button class="sellers-product__card-button">Add to cart</button>
+                <button class="button-add-to-card button-add-to-card--wide">Add to cart</button>
             </div>
     `
     return elem
@@ -107,7 +107,7 @@ export function creatCardTrend ({color, colorSave, name, review, price, save}) {
                         <div class="trending-earphones__product__card__pick__descr__price">$ ${price}</div>
                     </div>
                 </div>
-                <button class="trending-earphones__product__card__button">Add to cart</button>
+                <button class="button-add-to-card button-add-to-card--wide">Add to cart</button>
             </div>
     `
     return elem

@@ -25,8 +25,8 @@ export default function createFeaturedProducts () {
                     demonstrate the visual form of a product</p>
             </div>
             <div class="featured-products-descr_button">
-                <button class="featured-products-descr_button-add">Add to cart</button>
-                <button class="featured-products-descr_button-more">View more</button>
+                <button class="button-add-to-card">Add to cart</button>
+                <button class="button-more">View more</button>
             </div>
         </div>
     `

@@ -14,9 +14,9 @@
     font-weight: 400;
     font-style: italic;
 
-    // span {
-    //   color: $primary-color;
-    // }
+    span {
+      color: $primary-color;
+    }
   }
 }
 
@@ -36,8 +36,6 @@
     list-style-type: none;
   }
 }
-
-
 
 .latest-product {
   display: flex;
@@ -175,13 +173,14 @@
         left: -54px;
       }
       &-background {
+        width: 272px;
+        height: 477px;
         position: absolute;
       
         top: 0;
         left: 0;
         z-index: 1;
-        width: 272px;
-        height: 477px;
+
       }
       &-product {
         position: absolute;
@@ -210,17 +209,6 @@
     }
   }
 }
-
-
-// @mixin isDesktop() {
-//   @media (min-width: 1920px) {
-// .menu {
-//   ul {
-//     background: $blue-3-color;
-//   }
-// }
-// }
-// }
 
 @media (min-width: 720px) and (max-width: 1240px) {
   .menu {
